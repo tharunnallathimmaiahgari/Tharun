@@ -1,0 +1,284 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa; 
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  
+  .container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+ 
+  header {
+    position: relative;
+  }
+  
+  
+  .navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    background: #66b3ff; 
+    padding: 1rem 2rem;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    margin-right: 0.5rem;
+  }
+  
+  .brand-name {
+    text-align: start;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #e0f2ff;
+  }
+  
+  .login-link {
+    font-weight: 500;
+  }
+  
+ 
+  .hero {
+    background: url('images/hotel-image.jpg') no-repeat center center/cover;
+    height: 50vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(102, 179, 255, 0.1); 
+  }
+  
+  .hero-content {
+    position: relative;
+    text-align: center;
+    max-width: 600px;
+    padding: 1rem;
+  }
+  
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    color: #333; 
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #333; 
+  }
+  
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0.25rem;
+  }
+  
+  .search-form input {
+    padding: 0.5rem;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .search-form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+  }
+  
+  .search-form button:hover {
+    background: #0056b3;
+  }
+  
+
+  main {
+    padding: 2rem;
+  }
+  
+  
+  .section {
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+  }
+  
+ 
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background: #fdfdfd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-content h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+  }
+  
+  .card-content p {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  
+  .offer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .offer {
+    text-align: center;
+    background-color: #fdfdfd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .offer p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+ 
+  footer {
+    background: #66b3ff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 2rem;
+  }
+  
+  footer a {
+    color: #e0f2ff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    
+    .nav-links {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+  
